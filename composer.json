@@ -18,7 +18,8 @@
         "laravel/tinker": "^2.5",
         "livewire/livewire": "^2.0",
         "multicaret/laravel-acquaintances": "^3.4",
-        "munafio/chatify": "^1.0"
+        "munafio/chatify": "*",
+        "laravel/nova": "*"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -62,5 +63,15 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ]
-    }
+    },
+    "repositories": [
+    	{
+    		"type": "path",
+    		"url": "./nova"
+    	},
+    	{
+    		"type": "path",
+    		"url": "./chatify"
+    	}
+    ]
 }
