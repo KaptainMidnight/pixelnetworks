@@ -39,6 +39,7 @@ class Friends extends Component
         $user->acceptFriendRequest($sender);
 
         unset($this->requests[array_search($sender, $this->requests)]);
+        $this->friendsAccepted[] = $sender;
     }
 
     public function deny($sender)

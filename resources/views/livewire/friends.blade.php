@@ -72,40 +72,28 @@
                                      class="text-sm font-normal text-green-400 tracking-wide">{{ __('Accepted!') }}</div>
                             </div>
                         @endforeach
-
-                        @foreach($requests as $request)
-                                <div
-                                    class="flex justify-start cursor-pointer text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2">
-                                    @if(rand(0, 1) == 1)
-                                        <span class="bg-green-400 h-2 w-2 m-2 rounded-full"></span>
-                                    @endif
-                                    <div class="flex-grow font-medium px-2">{{ $request->name }}</div>
-                                    <div wire:click="send({{ $request->id }})"
-                                         class="text-sm font-normal text-blue-400 tracking-wide">{{ __('Pending!') }}</div>
-                                </div>
-                        @endforeach
                     </div>
                 </div>
             </div>
         </div>
     </div>
-{{--    @if(count($requests) > 0)--}}
-{{--        @foreach($requests as $request)--}}
-{{--            <div class="sm:w-1/4 p-2 mx-auto">--}}
-{{--                <div class="bg-white px-6 py-8 rounded-lg shadow-lg text-center">--}}
-{{--                    <div class="mb-3">--}}
-{{--                        <img--}}
-{{--                            class="w-auto mx-auto rounded-full"--}}
-{{--                            src="https://i.pravatar.cc/150?img=66"--}}
-{{--                        />--}}
-{{--                    </div>--}}
-{{--                    <h2 class="text-xl font-medium text-gray-700">{{ $request->name ?? '' }}</h2>--}}
-{{--                    <span class="text-blue-500 block mb-5">{{ __('Your new friend!') }}</span>--}}
+    @if(count($requests) > 0)
+        @foreach($requests as $request)
+            <div class="sm:w-1/4 p-2 mx-auto">
+                <div class="bg-white px-6 py-8 rounded-lg shadow-lg text-center">
+                    <div class="mb-3">
+                        <img
+                            class="w-auto mx-auto rounded-full"
+                            src="https://i.pravatar.cc/150?img=66"
+                        />
+                    </div>
+                    <h2 class="text-xl font-medium text-gray-700">{{ $request->name ?? '' }}</h2>
+                    <span class="text-blue-500 block mb-5">{{ __('Your new friend!') }}</span>
 
-{{--                    <a wire:click="accept({{ $request->id ?? '' }})" wire:click="$refresh" class="px-4 py-2 bg-blue-500 text-white rounded-full cursor-pointer">{{ __('Accept') }}</a>--}}
-{{--                    <a wire:click="deny({{ $request->id ?? '' }})" class="px-4 py-2 bg-blue-500 text-white rounded-full cursor-pointer">{{ __('Deny') }}</a>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        @endforeach--}}
-{{--    @endif--}}
+                    <a wire:click="accept({{ $request->id ?? '' }})" wire:click="$refresh" class="px-4 py-2 bg-blue-500 text-white rounded-full cursor-pointer">{{ __('Accept') }}</a>
+                    <a wire:click="deny({{ $request->id ?? '' }})" class="px-4 py-2 bg-blue-500 text-white rounded-full cursor-pointer">{{ __('Deny') }}</a>
+                </div>
+            </div>
+        @endforeach
+    @endif
 </div>

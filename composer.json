@@ -18,7 +18,7 @@
         "laravel/tinker": "^2.5",
         "livewire/livewire": "^2.0",
         "multicaret/laravel-acquaintances": "^3.4",
-        "munafio/chatify": "*",
+        "munafio/chatify": "@dev",
         "laravel/nova": "*"
     },
     "require-dev": {
@@ -65,13 +65,13 @@
         ]
     },
     "repositories": [
-    	{
-    		"type": "path",
-    		"url": "./nova"
-    	},
-    	{
-    		"type": "path",
-    		"url": "./chatify"
-    	}
+        {
+            "type": "path",
+            "url": "./nova"
+        },
+        {
+            "type": "path",
+            "url": "./chatify"
+        }
     ]
 }
