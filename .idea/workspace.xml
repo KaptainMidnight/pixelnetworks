@@ -21,17 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="34e0b1af-b7cd-4bb2-8437-408925e22654" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Friends.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Friends.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Nova/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/NovaServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/NovaServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/nova.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/nova.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/comment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/comment.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/friends.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/friends.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/messages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/messages.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +210,7 @@
       <workItem from="1606244521000" duration="2710000" />
       <workItem from="1606370797549" duration="323000" />
       <workItem from="1606493231307" duration="1022000" />
-      <workItem from="1606497147836" duration="1863000" />
+      <workItem from="1606497147836" duration="4090000" />
     </task>
     <servers />
   </component>
@@ -244,6 +234,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="271" y="46" key="#Test_Frameworks/0.0.1366.768@0.0.1366.768" timestamp="1605813661719" />
+    <state x="195" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606501061951">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="195" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.768@0.0.1366.768" timestamp="1606501061951" />
     <state x="433" y="118" key="NewPhpClassDialog" timestamp="1605450073457">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
