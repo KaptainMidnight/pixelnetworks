@@ -26,6 +26,6 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/news', function () {
 })->name('news');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/news/{id}', Headline::class)->name('headline');
-Route::middleware(['auth:sanctum', 'verified'])->get('/comment/{id}/create', \App\Http\Livewire\Comment::class)->name('comment.create');
+//Route::middleware(['auth:sanctum', 'verified'])->get('/comment/{id}/create', \App\Http\Livewire\Comment::class)->name('comment.create');
 Route::middleware(['auth:sanctum', 'verified'])->get('/friends', \App\Http\Livewire\Friends::class)->name('friends');
-//Route::middleware(['auth:sanctum', 'verified'])->get('/messenger', \App\Http\Livewire\Messages::class)->name('messages');
+//Route::middleware(['auth:sanctum', 'verified'])->get('/messenger', \App\Http\Livewire\Messages::class)->name('messenger');

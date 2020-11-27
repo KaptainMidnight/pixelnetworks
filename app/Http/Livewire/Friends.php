@@ -17,9 +17,10 @@ class Friends extends Component
     {
         $this->friendsAccepted = Auth::user()->getFriends();
         $this->friends = UserModel::query()->where('id', '!=', Auth::id())->get();
+
         foreach(Auth::user()->getPendingFriendships() as $friend)
         {
-            $this->requests[] = UserModel::find($friend->sender_id);
+            $this->requests[] = UserModel::find($friend->recipient_id);
         }
     }
 

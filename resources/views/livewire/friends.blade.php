@@ -68,8 +68,7 @@
                                     <span class="bg-green-400 h-2 w-2 m-2 rounded-full"></span>
                                 @endif
                                 <div class="flex-grow font-medium px-2">{{ $friend->name }}</div>
-                                <div wire:click="send({{ $friend->id }})"
-                                     class="text-sm font-normal text-green-400 tracking-wide">{{ __('Accepted!') }}</div>
+{{--                                <div class="text-sm font-normal text-green-400 tracking-wide">{{ __('Send message') }}</div>--}}
                             </div>
                         @endforeach
                     </div>

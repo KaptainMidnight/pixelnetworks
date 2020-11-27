@@ -9,6 +9,7 @@ use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
 use Multicaret\Acquaintances\Traits\Friendable;
+use Silvanite\Brandenburg\Traits\HasRoles;
 
 class User extends Authenticatable
 {
