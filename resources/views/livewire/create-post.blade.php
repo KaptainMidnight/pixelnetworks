@@ -1,4 +1,4 @@
-<div class="bg-white mx-auto mt-3 shadow-md rounded w-1/3 px-8 pt-6 pb-8 mb-4 flex flex-col">
+<div class="bg-white w-1/3 mx-auto mt-3 shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
     <div class="mb-4">
         <label class="block text-grey-darker text-sm font-bold mb-2" for="username">
             {{ __('Title') }}

@@ -166,7 +166,8 @@ return [
          * Package Service Providers...
          */
         Multicaret\Acquaintances\AcquaintancesServiceProvider::class,
-	\Chatify\ChatifyServiceProvider::class,
+	    \Chatify\ChatifyServiceProvider::class,
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         /*
          * Application Service Providers...
          */

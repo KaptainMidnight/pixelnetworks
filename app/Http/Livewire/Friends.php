@@ -11,13 +11,11 @@ class Friends extends Component
     public $friends;
     public $requests = [];
     public $friendsAccepted;
-    public $friendsPending;
 
     public function mount()
     {
         $this->friendsAccepted = Auth::user()->getFriends();
         $this->friends = UserModel::query()->where('id', '!=', Auth::id())->get();
-
         foreach(Auth::user()->getPendingFriendships() as $friend)
         {
             $this->requests[] = UserModel::find($friend->recipient_id);

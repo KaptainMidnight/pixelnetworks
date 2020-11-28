@@ -69,7 +69,7 @@ class MessagesController extends Controller
      * Fetch data by id for (user/group)
      *
      * @param Request $request
-     * @return collection
+     * @return \Illuminate\Http\JsonResponse
      */
     public function idFetchData(Request $request)
     {
@@ -82,7 +82,7 @@ class MessagesController extends Controller
         }
 
         // send the response
-        return Response::json([
+        return response()->json([
             'favorite' => $favorite,
             'fetch' => $fetch,
             'user_avatar' => asset('/storage/' . config('chatify.user_avatar.folder') . '/' . $fetch->avatar),
@@ -110,7 +110,7 @@ class MessagesController extends Controller
      * Send a message to database
      *
      * @param Request $request
-     * @return JSON response
+     * @return \Illuminate\Http\JsonResponse response
      */
     public function send(Request $request)
     {
@@ -165,11 +165,11 @@ class MessagesController extends Controller
         }
 
         // send the response
-        return Response::json([
+        return response()->json([
             'status' => '200',
             'error' => $error_msg ? 1 : 0,
             'error_msg' => $error_msg,
-            'message' => Chatify::messageCard(@$messageData),
+            'message' => Chatify::messageCard($messageData),
             'tempID' => $request['temporaryMsgId'],
         ]);
     }
@@ -178,7 +178,7 @@ class MessagesController extends Controller
      * fetch [user/group] messages from database
      *
      * @param Request $request
-     * @return JSON response
+     * @return \Illuminate\Http\JsonResponse response
      */
     public function fetch(Request $request)
     {
@@ -197,13 +197,13 @@ class MessagesController extends Controller
                 );
             }
             // send the response
-            return Response::json([
+            return response()->json([
                 'count' => $query->count(),
                 'messages' => $allMessages,
             ]);
         }
         // send the response
-        return Response::json([
+        return response()->json([
             'count' => $query->count(),
             'messages' => '<p class="message-hint"><span>Say \'hi\' and start messaging</span></p>',
         ]);

@@ -20,13 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34e0b1af-b7cd-4bb2-8437-408925e22654" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/blog2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CreatePost.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/CreatePost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/vendor/Chatify/MessagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/vendor/Chatify/MessagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Friends.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Friends.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Comment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatify/src/ChatifyMessenger.php" beforeDir="false" afterPath="$PROJECT_DIR$/chatify/src/ChatifyMessenger.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatify/src/Facades/ChatifyMessenger.php" beforeDir="false" afterPath="$PROJECT_DIR$/chatify/src/Facades/ChatifyMessenger.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatify/src/Http/Controllers/MessagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/chatify/src/Http/Controllers/MessagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/create-post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/create-post.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/post.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/Chatify/layouts/sendForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/Chatify/layouts/sendForm.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,6 +185,13 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
       <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
       <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kKFxHYxsRJM5Mv7J0ok7ZJnZTz" />
@@ -188,7 +204,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -216,7 +232,8 @@
       <workItem from="1606370797549" duration="323000" />
       <workItem from="1606493231307" duration="1022000" />
       <workItem from="1606497147836" duration="4891000" />
-      <workItem from="1606578848927" duration="2077000" />
+      <workItem from="1606578848927" duration="2538000" />
+      <workItem from="1606589616428" duration="2174000" />
     </task>
     <servers />
   </component>
@@ -244,21 +261,25 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="195" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.768@0.0.1366.768" timestamp="1606501061951" />
+    <state x="447" y="303" key="ComposerInitDialogKey" timestamp="1606590715038">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="447" y="303" key="ComposerInitDialogKey/0.0.1366.768@0.0.1366.768" timestamp="1606590715038" />
     <state x="433" y="118" key="NewPhpClassDialog" timestamp="1605450073457">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="433" y="118" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1605450073457" />
-    <state x="199" y="23" key="SettingsEditor" timestamp="1606497550170">
+    <state x="199" y="23" key="SettingsEditor" timestamp="1606589697732">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="199" y="23" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1606497550170" />
+    <state x="199" y="23" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1606589697732" />
     <state x="390" y="27" width="586" height="714" key="find.popup" timestamp="1605598002891">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="390" y="27" width="586" height="714" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1605598002891" />
-    <state x="348" y="92" width="670" height="676" key="search.everywhere.popup" timestamp="1606155625236">
+    <state x="348" y="92" width="672" height="676" key="search.everywhere.popup" timestamp="1606591142696">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="348" y="92" width="670" height="676" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1606155625236" />
+    <state x="348" y="92" width="672" height="676" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1606591142696" />
   </component>
 </project>

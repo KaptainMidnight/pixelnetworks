@@ -109,13 +109,13 @@ class ChatifyMessenger
      */
     public function fetchMessage($id){
         $attachment = $attachment_type = $attachment_title = null;
-        $msg = Message::where('id',$id)->first();
+        $msg = Message::where('id', $id)->first();
 
         // If message has attachment
         if($msg->attachment){
             // Get attachment and attachment title
-            $att = explode(',',$msg->attachment);
-            $attachment       = $att[0];
+            $att = explode(',', $msg->attachment);
+            $attachment = $att[0];
             $attachment_title = $att[1];
 
             // determine the type of the attachment
@@ -127,7 +127,7 @@ class ChatifyMessenger
             'id' => $msg->id,
             'from_id' => $msg->from_id,
             'to_id' => $msg->to_id,
-            'message' => $msg->body,
+            'message' => decrypt($msg->body),
             'attachment' => [$attachment, $attachment_title, $attachment_type],
             'time' => $msg->created_at->diffForHumans(),
             'fullTime' => $msg->created_at,
@@ -155,8 +155,8 @@ class ChatifyMessenger
      * @return Collection
      */
     public function fetchMessagesQuery($user_id){
-        return Message::where('from_id',Auth::user()->id)->where('to_id',$user_id)
-                    ->orWhere('from_id',$user_id)->where('to_id',Auth::user()->id);
+        return Message::where('from_id', Auth::user()->id)->where('to_id', $user_id)
+                    ->orWhere('from_id', $user_id)->where('to_id', Auth::user()->id);
     }
 
     /**
@@ -171,7 +171,7 @@ class ChatifyMessenger
         $message->type = $data['type'];
         $message->from_id = $data['from_id'];
         $message->to_id = $data['to_id'];
-        $message->body = $data['body'];
+        $message->body = encrypt($data['body']);
         $message->attachment = $data['attachment'];
         $message->save();
     }
@@ -184,9 +184,9 @@ class ChatifyMessenger
      * @return bool
      */
     public function makeSeen($user_id){
-        Message::Where('from_id',$user_id)
-                ->where('to_id',Auth::user()->id)
-                ->where('seen',0)
+        Message::Where('from_id', $user_id)
+                ->where('to_id', Auth::user()->id)
+                ->where('seen', 0)
                 ->update(['seen' => 1]);
         return 1;
     }
@@ -208,7 +208,7 @@ class ChatifyMessenger
      * @return Collection
      */
     public function countUnseenMessages($user_id){
-        return Message::where('from_id',$user_id)->where('to_id',Auth::user()->id)->where('seen',0)->count();
+        return Message::where('from_id', $user_id)->where('to_id', Auth::user()->id)->where('seen', 0)->count();
     }
 
     /**
@@ -217,7 +217,7 @@ class ChatifyMessenger
      *
      * @param int $messenger_id
      * @param Collection $user
-     * @return void
+     * @return string
      */
     public function getContactItem($messenger_id, $user){
         // get last message
@@ -257,18 +257,18 @@ class ChatifyMessenger
      * @return boolean
      */
     public function makeInFavorite($user_id, $action){
-        if ($action > 0) {
+        if ($action) {
             // Star
             $star = new Favorite();
             $star->id = rand(9,99999999);
             $star->user_id = Auth::user()->id;
             $star->favorite_id = $user_id;
             $star->save();
-            return $star ? true : false;
+            return $star;
         }else{
             // UnStar
-            $star = Favorite::where('user_id',Auth::user()->id)->where('favorite_id',$user_id)->delete();
-            return $star ? true : false;
+            $star = Favorite::where('user_id', Auth::user()->id)->where('favorite_id', $user_id)->delete();
+            return $star;
         }
     }
 
@@ -279,14 +279,15 @@ class ChatifyMessenger
      * @return array
      */
     public function getSharedPhotos($user_id){
-        $images = array(); // Default
+        $images = [];
+
         // Get messages
-        $msgs = $this->fetchMessagesQuery($user_id)->orderBy('created_at','DESC');
+        $msgs = $this->fetchMessagesQuery($user_id)->orderBy('created_at', 'DESC');
         if($msgs->count() > 0){
             foreach ($msgs->get() as $msg) {
                 // If message has attachment
                 if($msg->attachment){
-                    $attachment = explode(',',$msg->attachment)[0]; // Attachment
+                    $attachment = explode(',', $msg->attachment)[0]; // Attachment
                     // determine the type of the attachment
                     in_array(pathinfo($attachment, PATHINFO_EXTENSION), $this->getAllowedImages())
                     ? array_push($images, $attachment) : '';
@@ -312,14 +313,13 @@ class ChatifyMessenger
                 if ($msg->attachment) {
                     $path = storage_path('app/public/'.config('chatify.attachments.folder').'/'.explode(',', $msg->attachment)[0]);
                     if(file_exists($path)){
-                        @unlink($path);
+                        unlink($path);
                     }
                 }
             }
             return 1;
-        }catch(Exception $e) {
+        } catch(Exception $e) {
             return 0;
         }
     }
-
 }
