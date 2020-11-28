@@ -3,7 +3,9 @@
         <img src="https://images.unsplash.com/photo-1573748240263-a4e9c57a7fcd" alt="People"
              class="w-full object-cover h-32 sm:h-48 md:h-64">
         <div class="p-4 md:p-6">
-            <p class="text-blue-500 font-semibold text-xs mb-1 leading-none">News</p>
+{{--            @if(\Illuminate\Support\Carbon::parse($post->created_at)->startOfSecond() < time() - (3600))--}}
+{{--                <p class="text-blue-500 font-semibold text-xs mb-1 leading-none">New</p>--}}
+{{--            @endif--}}
             <h3 class="font-semibold mb-2 text-xl leading-tight sm:leading-normal">
                 <a href="news/{{ $post->id }}">{{ $post->title }}</a>
             </h3>

@@ -5,7 +5,9 @@
         </h2>
     </x-slot>
 
-    @foreach(\App\Models\Post::all() as $post)
+    @livewire('create-post')
+
+    @foreach(\App\Models\Post::all()->sortByDesc('created_at') as $post)
         @livewire('post', ['post' => $post])
     @endforeach
 </x-app-layout>
