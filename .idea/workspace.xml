@@ -22,12 +22,9 @@
     <list default="true" id="34e0b1af-b7cd-4bb2-8437-408925e22654" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Friends.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Friends.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/comment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/comment.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/create-post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/create-post.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/headline.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/headline.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/friends.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/friends.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/post.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +193,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -228,7 +225,8 @@
       <workItem from="1606589616428" duration="2634000" />
       <workItem from="1606640875349" duration="497000" />
       <workItem from="1606641408029" duration="661000" />
-      <workItem from="1606644640455" duration="3237000" />
+      <workItem from="1606644640455" duration="3407000" />
+      <workItem from="1606656320159" duration="2186000" />
     </task>
     <servers />
   </component>
@@ -264,17 +262,21 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="433" y="118" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1605450073457" />
-    <state x="199" y="23" key="SettingsEditor" timestamp="1606641375193">
+    <state x="199" y="23" key="SettingsEditor" timestamp="1606665907166">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="199" y="23" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1606641375193" />
+    <state x="199" y="23" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1606665907166" />
+    <state x="506" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606657140633">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="506" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1606657140633" />
     <state x="390" y="27" width="586" height="714" key="find.popup" timestamp="1605598002891">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="390" y="27" width="586" height="714" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1605598002891" />
-    <state x="348" y="92" width="672" height="676" key="search.everywhere.popup" timestamp="1606591142696">
+    <state x="348" y="92" width="672" height="676" key="search.everywhere.popup" timestamp="1606656770416">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="348" y="92" width="672" height="676" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1606591142696" />
+    <state x="348" y="92" width="672" height="676" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1606656770416" />
   </component>
 </project>

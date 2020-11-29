@@ -68,7 +68,9 @@
                                     <span class="bg-green-400 h-2 w-2 m-2 rounded-full"></span>
                                 @endif
                                 <div class="flex-grow font-medium px-2">{{ $friend->name }}</div>
-{{--                                <div class="text-sm font-normal text-green-400 tracking-wide">{{ __('Send message') }}</div>--}}
+                                <div class="text-sm font-normal text-green-400 tracking-wide">
+                                    <a href="profile/{{ $friend->id }}">{{ __('Profile') }}</a>
+                                </div>
                             </div>
                         @endforeach
                     </div>
@@ -89,7 +91,7 @@
                     <h2 class="text-xl font-medium text-gray-700">{{ $request->name ?? '' }}</h2>
                     <span class="text-blue-500 block mb-5">{{ __('Your new friend!') }}</span>
 
-                    <a wire:click="accept({{ $request->id ?? '' }})" wire:click="$refresh" class="px-4 py-2 bg-blue-500 text-white rounded-full cursor-pointer">{{ __('Accept') }}</a>
+                    <a wire:click="accept({{ $request->id ?? '' }})" class="px-4 py-2 bg-blue-500 text-white rounded-full cursor-pointer">{{ __('Accept') }}</a>
                     <a wire:click="deny({{ $request->id ?? '' }})" class="px-4 py-2 bg-blue-500 text-white rounded-full cursor-pointer">{{ __('Deny') }}</a>
                 </div>
             </div>

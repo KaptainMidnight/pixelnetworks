@@ -17,11 +17,11 @@ class Friends extends Component
         $this->friendsAccepted = Auth::user()->getFriends();
         $this->friends = UserModel::query()->whereNotIn('id', Auth::user()->getAcceptedFriendships()->map(function($item) {
             return $item->recipient_id;
-        }))->get();
-        foreach(Auth::user()->getPendingFriendships() as $friend)
-        {
-            $this->requests[] = UserModel::find($friend->recipient_id);
-        }
+        }))->where('id', '!=', Auth::id())->get();
+
+        $this->requests = Auth::user()->getPendingFriendships()->map(function($item) {
+            return UserModel::findOrFail($item->recipient_id)->toArray();
+        });
     }
 
     public function send($recipient)
@@ -38,8 +38,6 @@ class Friends extends Component
         $user = Auth::user();
         $sender = UserModel::find($sender);
         $user->acceptFriendRequest($sender);
-
-        unset($this->requests[array_search($sender, $this->requests)]);
         $this->friendsAccepted[] = $sender;
     }
 
