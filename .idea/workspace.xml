@@ -21,10 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="34e0b1af-b7cd-4bb2-8437-408925e22654" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Friends.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Friends.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/friends.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/friends.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/post.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,6 +223,7 @@
       <workItem from="1606641408029" duration="661000" />
       <workItem from="1606644640455" duration="3407000" />
       <workItem from="1606656320159" duration="2186000" />
+      <workItem from="1606671743554" duration="383000" />
     </task>
     <servers />
   </component>
