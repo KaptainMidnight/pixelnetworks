@@ -15,7 +15,9 @@ class Friends extends Component
     public function mount()
     {
         $this->friendsAccepted = Auth::user()->getFriends();
-        $this->friends = UserModel::query()->where('id', '!=', Auth::id())->get();
+        $this->friends = UserModel::query()->whereNotIn('id', Auth::user()->getAcceptedFriendships()->map(function($item) {
+            return $item->recipient_id;
+        }))->get();
         foreach(Auth::user()->getPendingFriendships() as $friend)
         {
             $this->requests[] = UserModel::find($friend->recipient_id);

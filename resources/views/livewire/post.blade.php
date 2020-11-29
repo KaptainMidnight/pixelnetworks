@@ -1,23 +1,32 @@
-<div>
-    <div class="mb-3 mx-auto bg-white overflow-hidden border-b-4 border-blue-500 w-1/3">
-        <img src="https://images.unsplash.com/photo-1573748240263-a4e9c57a7fcd" alt="People"
-             class="w-full object-cover h-32 sm:h-48 md:h-64">
-        <div class="p-4 md:p-6">
-            <h3 class="font-semibold mb-2 text-xl leading-tight sm:leading-normal">
-                <a href="news/{{ $post->id }}">{{ $post->title }}</a>
-            </h3>
-            <div class="text-sm flex items-center">
-                <svg class="opacity-75 mr-2" xmlns="http://www.w3.org/2000/svg"
-                     xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="12"
-                     height="12" viewBox="0 0 97.16 97.16" style="enable-background:new 0 0 97.16 97.16;"
-                     xml:space="preserve">
-        <path
-            d="M48.58,0C21.793,0,0,21.793,0,48.58s21.793,48.58,48.58,48.58s48.58-21.793,48.58-48.58S75.367,0,48.58,0z M48.58,86.823    c-21.087,0-38.244-17.155-38.244-38.243S27.493,10.337,48.58,10.337S86.824,27.492,86.824,48.58S69.667,86.823,48.58,86.823z"/>
-                    <path
-                        d="M73.898,47.08H52.066V20.83c0-2.209-1.791-4-4-4c-2.209,0-4,1.791-4,4v30.25c0,2.209,1.791,4,4,4h25.832    c2.209,0,4-1.791,4-4S76.107,47.08,73.898,47.08z"/>
-      </svg>
-                <p class="leading-none">{{ \Carbon\Carbon::parse($post->created_at)->diffForHumans() }}</p>
-            </div>
-        </div>
+<div class="p-12 md:w-1/2 flex flex-col items-start">
+    <span class="inline-block py-1 px-3 rounded bg-indigo-100 text-indigo-500 text-sm font-medium tracking-widest">CATEGORY</span>
+    <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">{{ $post->title }}</h2>
+    <p class="leading-relaxed mb-8">{{ $post->description }}</p>
+    <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-200 mt-auto w-full">
+        <a class="text-indigo-500 inline-flex items-center" href="/news/{{ $post->id }}">
+            {{ __('Learn') }}
+            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+            </svg>
+        </a>
+        <span class="text-gray-600 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-300">
+            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>1.2K
+          </span>
+        <span class="text-gray-600 inline-flex items-center leading-none text-sm">
+            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+            </svg>{{ \App\Models\Comment::wherePostId($post->id)->count() }}
+          </span>
     </div>
+    <a class="inline-flex items-center">
+        <img alt="blog" src="https://dummyimage.com/104x104" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+        <span class="flex-grow flex flex-col pl-4">
+            <span class="title-font font-medium text-gray-900">{{ $post->user->name }}</span>
+            <span class="text-gray-500 text-sm">UI DEVELOPER</span>
+          </span>
+    </a>
 </div>
