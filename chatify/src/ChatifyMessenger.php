@@ -155,8 +155,8 @@ class ChatifyMessenger
      * @return Collection
      */
     public function fetchMessagesQuery($user_id){
-        return Message::where('from_id', Auth::user()->id)->where('to_id', $user_id)
-                    ->orWhere('from_id', $user_id)->where('to_id', Auth::user()->id);
+        return Message::where('from_id', Auth::id())->where('to_id', $user_id)
+                    ->orWhere('from_id', $user_id)->where('to_id', Auth::id());
     }
 
     /**
@@ -244,8 +244,7 @@ class ChatifyMessenger
      */
     public function inFavorite($user_id){
         return Favorite::where('user_id', Auth::user()->id)
-                        ->where('favorite_id', $user_id)->count() > 0
-                        ? true : false;
+                        ->where('favorite_id', $user_id)->count() > 0;
 
     }
 
@@ -254,14 +253,14 @@ class ChatifyMessenger
      *
      * @param int $user_id
      * @param int $star
-     * @return boolean
+     * @return Favorite
      */
     public function makeInFavorite($user_id, $action){
         if ($action) {
             // Star
             $star = new Favorite();
-            $star->id = rand(9,99999999);
-            $star->user_id = Auth::user()->id;
+            $star->id = rand(9, 99999999);
+            $star->user_id = Auth::id();
             $star->favorite_id = $user_id;
             $star->save();
             return $star;

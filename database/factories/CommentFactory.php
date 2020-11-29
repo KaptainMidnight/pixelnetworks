@@ -22,7 +22,7 @@ class CommentFactory extends Factory
     public function definition()
     {
         return [
-            'comment' => $this->faker->text(),
+            'comment' => encrypt($this->faker->text()),
             'post_id' => rand(1, 300),
             'user_id' => rand(1, 150)
         ];

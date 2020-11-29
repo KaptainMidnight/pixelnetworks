@@ -28,7 +28,7 @@
 
     @foreach($comments as $comment)
         <div class="mb-3 border-b">
-            <p class="truncate ..."><b>{{ $comment->user->name }}</b><i><br>{{ $comment->comment }}</i><br>{{ \Carbon\Carbon::parse($comment->created_at)->diffForHumans() }}</p>
+            <p class="truncate ..."><b>{{ $comment->user->name }}</b><i><br>{{ decrypt($comment->comment) }}</i><br>{{ \Carbon\Carbon::parse($comment->created_at)->diffForHumans() }}</p>
         </div>
     @endforeach
 </div>

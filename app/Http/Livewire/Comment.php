@@ -17,7 +17,7 @@ class Comment extends Component
     {
         $this->post_id = $post_id;
         $this->user_id = Auth::id();
-        $this->comments = CommentModel::with('post')->where('post_id', $this->post_id)->orderBy('created_at', 'desc')->get();
+        $this->comments = CommentModel::with('post')->where('post_id', $this->post_id)->orderByDesc('created_at')->get();
     }
 
     public function submit()
@@ -25,13 +25,11 @@ class Comment extends Component
         $comment = new CommentModel([
             'post_id' => $this->post_id,
             'user_id' => $this->user_id,
-            'comment' => $this->comment
+            'comment' => encrypt($this->comment)
         ]);
         $comment->save();
         // TODO: Push in first element
         $this->comment = '';
-
-//        $this->redirect("/news/{$this->post_id}");
     }
     public function render()
     {
