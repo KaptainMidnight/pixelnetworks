@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -21,6 +24,11 @@
   <component name="ChangeListManager">
     <list default="true" id="34e0b1af-b7cd-4bb2-8437-408925e22654" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +231,7 @@
       <workItem from="1606641408029" duration="661000" />
       <workItem from="1606644640455" duration="3407000" />
       <workItem from="1606656320159" duration="2186000" />
-      <workItem from="1606671743554" duration="383000" />
+      <workItem from="1606671743554" duration="4991000" />
     </task>
     <servers />
   </component>
@@ -259,21 +267,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="433" y="118" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1605450073457" />
-    <state x="199" y="23" key="SettingsEditor" timestamp="1606665907166">
+    <state x="199" y="23" key="SettingsEditor" timestamp="1606751809363">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="199" y="23" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1606665907166" />
+    <state x="199" y="23" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1606751809363" />
     <state x="506" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606657140633">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="506" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1606657140633" />
-    <state x="390" y="27" width="586" height="714" key="find.popup" timestamp="1605598002891">
+    <state x="390" y="27" width="586" height="714" key="find.popup" timestamp="1606753409038">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="390" y="27" width="586" height="714" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1605598002891" />
-    <state x="348" y="92" width="672" height="676" key="search.everywhere.popup" timestamp="1606656770416">
+    <state x="390" y="27" width="586" height="714" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1606753409038" />
+    <state x="348" y="92" width="672" height="676" key="search.everywhere.popup" timestamp="1606753395977">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="348" y="92" width="672" height="676" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1606656770416" />
+    <state x="348" y="92" width="672" height="676" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1606753395977" />
+    <state x="348" y="92" width="672" height="676" key="search.everywhere.popup/0.23.1366.679@0.23.1366.679" timestamp="1606751242647" />
   </component>
 </project>

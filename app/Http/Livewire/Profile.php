@@ -11,7 +11,11 @@ class Profile extends Component
 
     public function mount($id)
     {
-        $this->user = User::findOrFail($id);
+        if (is_numeric($id)) {
+            $this->user = User::findOrFail($id);
+        } else {
+            $this->user = User::whereShortLink($id)->get()[0];
+        }
     }
 
     public function render()

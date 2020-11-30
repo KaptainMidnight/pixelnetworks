@@ -63,6 +63,8 @@ use Silvanite\Brandenburg\Traits\HasRoles;
  * @method static \Illuminate\Database\Eloquent\Builder|User whereTwoFactorSecret($value)
  * @method static \Illuminate\Database\Eloquent\Builder|User whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property-read \App\Models\ShortLink|null $short_link
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereShortLink($value)
  */
 class User extends Authenticatable
 {
@@ -122,5 +124,10 @@ class User extends Authenticatable
     public function comment()
     {
         return $this->hasMany(Comment::class);
+    }
+
+    public function short_link()
+    {
+        return $this->hasOne(ShortLink::class);
     }
 }
