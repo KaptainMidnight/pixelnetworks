@@ -23,8 +23,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34e0b1af-b7cd-4bb2-8437-408925e22654" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/blog2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Nova/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/jetstream.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/pagination.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/passwords.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/vendor/nova/en.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/vendor/nova/en/validation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/create-post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/create-post.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/friends.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/friends.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/Chatify/layouts/info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/Chatify/layouts/info.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/Chatify/layouts/listItem.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/Chatify/layouts/listItem.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/Chatify/layouts/modals.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/Chatify/layouts/modals.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/Chatify/layouts/sendForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/Chatify/layouts/sendForm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/Chatify/pages/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/Chatify/pages/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,6 +199,7 @@
       <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/reflection-docblock" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper" />
+      <path value="$PROJECT_DIR$/vendor/laravel-lang/lang" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kKFxHYxsRJM5Mv7J0ok7ZJnZTz" />
@@ -227,7 +246,8 @@
       <workItem from="1606641408029" duration="661000" />
       <workItem from="1606644640455" duration="3407000" />
       <workItem from="1606656320159" duration="2186000" />
-      <workItem from="1606671743554" duration="5431000" />
+      <workItem from="1606671743554" duration="5559000" />
+      <workItem from="1606757254945" duration="2102000" />
     </task>
     <servers />
   </component>
@@ -275,10 +295,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="390" y="27" width="586" height="714" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1606753409038" />
-    <state x="348" y="92" width="672" height="676" key="search.everywhere.popup" timestamp="1606753395977">
+    <state x="348" y="92" width="672" height="676" key="search.everywhere.popup" timestamp="1606762797740">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="348" y="92" width="672" height="676" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1606753395977" />
+    <state x="348" y="92" width="672" height="676" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1606762797740" />
     <state x="348" y="92" width="672" height="676" key="search.everywhere.popup/0.23.1366.679@0.23.1366.679" timestamp="1606751242647" />
   </component>
 </project>

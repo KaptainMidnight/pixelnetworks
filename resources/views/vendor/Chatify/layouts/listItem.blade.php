@@ -10,8 +10,8 @@
             </td>
             {{-- center side --}}
             <td>
-                <p data-id="{{ 'user_'.Auth::user()->id }}">Saved Messages <span>You</span></p>
-                <span>Save messages secretly</span>
+                <p data-id="{{ 'user_'.Auth::user()->id }}">{{ __('Saved messages') }}<span>{{ __('Вы') }}</span></p>
+                <span>{{ __('Save messages secretly') }}</span>
             </td>
         </tr>
     </table>
@@ -26,37 +26,37 @@
             @if($user->active_status)
                 <span class="activeStatus"></span>
             @endif
-        <div class="avatar av-m" 
+        <div class="avatar av-m"
         style="background-image: url('{{ asset('/storage/'.config('chatify.user_avatar.folder').'/'.$user->avatar) }}');">
         </div>
         </td>
         {{-- center side --}}
         <td>
         <p data-id="{{ $type.'_'.$user->id }}">
-            {{ strlen($user->name) > 12 ? trim(substr($user->name,0,12)).'..' : $user->name }} 
+            {{ strlen($user->name) > 12 ? trim(substr($user->name,0,12)).'..' : $user->name }}
             <span>{{ $lastMessage->created_at->diffForHumans() }}</span></p>
         <span>
             {{-- Last Message user indicator --}}
             {!!
-                $lastMessage->from_id == Auth::user()->id 
-                ? '<span class="lastMessageIndicator">You :</span>'
+                $lastMessage->from_id == Auth::user()->id
+                ? '<span class="lastMessageIndicator">Вы: </span>'
                 : ''
             !!}
             {{-- Last message body --}}
             @if($lastMessage->attachment == null)
             {{
-                strlen($lastMessage->body) > 30 
+                strlen($lastMessage->body) > 30
                 ? trim(substr($lastMessage->body, 0, 30)).'..'
                 : $lastMessage->body
             }}
             @else
-            <span class="fas fa-file"></span> Attachment
+            <span class="fas fa-file"></span> {{ __('Attachment') }}
             @endif
         </span>
         {{-- New messages counter --}}
             {!! $unseenCounter > 0 ? "<b>".$unseenCounter."</b>" : '' !!}
         </td>
-        
+
     </tr>
 </table>
 @endif
@@ -74,9 +74,9 @@
         {{-- center side --}}
         <td>
         <p data-id="{{ $type.'_'.$user->id }}">
-            {{ strlen($user->name) > 12 ? trim(substr($user->name,0,12)).'..' : $user->name }} 
+            {{ strlen($user->name) > 12 ? trim(substr($user->name,0,12)).'..' : $user->name }}
         </td>
-        
+
     </tr>
 </table>
 @endif

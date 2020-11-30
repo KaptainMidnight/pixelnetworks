@@ -13,7 +13,7 @@
                 </nav>
             </nav>
             {{-- Search input --}}
-            <input type="text" class="messenger-search" placeholder="Search" />
+            <input type="text" class="messenger-search" placeholder="Поиск" />
             {{-- Tabs --}}
             <div class="messenger-listView-tabs">
                 <a href="#" @if($route == 'user') class="active-tab" @endif data-view="users">
@@ -51,7 +51,7 @@
                 {{-- items --}}
                 <p class="messenger-title">{{ __('Search') }}</p>
                 <div class="search-records">
-                    <p class="message-hint"><span>{{ __('Type to search..') }}</span></p>
+                    <p class="message-hint"><span>{{ __('Type to search') }}</span></p>
                 </div>
              </div>
         </div>
@@ -80,7 +80,7 @@
         {{-- Internet connection --}}
         <div class="internet-connection">
             <span class="ic-connected">{{ __('Connected') }}</span>
-            <span class="ic-connecting">{{ __('Connected') }}</span>
+            <span class="ic-connecting">{{ __('Connecting') }}</span>
             <span class="ic-noInternet">{{ __('No internet access') }}</span>
         </div>
         {{-- Messaging area --}}

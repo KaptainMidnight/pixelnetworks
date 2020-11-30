@@ -22,7 +22,7 @@
                         </div>
                         <input
                             class="w-full rounded-md bg-gray-200 text-gray-700 leading-tight focus:outline-none py-2 px-2"
-                            id="search" type="text" placeholder="Search teams or members">
+                            id="search" type="text" placeholder="Искать людей">
                     </div>
                     <div class="py-3 text-sm overflow-auto h-64">
                         @foreach($friends as $friend)
@@ -58,7 +58,7 @@
                         </div>
                         <input
                             class="w-full rounded-md bg-gray-200 text-gray-700 leading-tight focus:outline-none py-2 px-2"
-                            id="search" type="text" placeholder="Search teams or members">
+                            id="search" type="text" placeholder="Искать друзей">
                     </div>
                     <div class="py-3 text-sm overflow-auto h-64">
                         @foreach($friendsAccepted as $friend)
